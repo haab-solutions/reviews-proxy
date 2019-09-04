@@ -4,7 +4,7 @@ const db = require('./index.js');
 function generateReviews() {
 
   let reviews = [];
-  let total = 3;
+  let total = 100;
 
   //10% of customers use/purchase same item or listing in more than one occasion
   let ninetyPercent = Math.ceil(total * 0.9);

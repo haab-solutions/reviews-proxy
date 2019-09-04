@@ -15,8 +15,8 @@ const seedData = function(data, callback) {
 };
 
 //retrieve data from mySQL database
-const getData = function(callback) {
-  connection.query('SELECT * FROM review', (err, results) => {
+const getData = function(id, callback) {
+  connection.query(`SELECT * FROM review WHERE listingId = ${id}`, (err, results) => {
     if (err) {
       callback(err);
     } else {

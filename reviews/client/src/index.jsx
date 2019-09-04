@@ -23,9 +23,11 @@ class App extends React.Component {
 
   componentDidMount() {
 // GET request to retrieve reviews data
+    let listingId = document.URL.split("/")[4]
+    listingId = parseInt(listingId);
     $.ajax({
       type: 'GET',
-      url: 'http://localhost:3003/api/reviews',
+      url: `http://localhost:3003/api/reviews/${listingId}`,
       dataType: 'json',
       success: (data) => {
         this.setState({
