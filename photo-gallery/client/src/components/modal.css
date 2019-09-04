@@ -1,0 +1,188 @@
+.airbnb {
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: Roboto,Helvetica Neue,sans-serif;
+  color: #484848
+}
+
+.card {
+  flex: 1;
+  border-radius: 4px;
+  padding: 0px 0px 0px 8px;
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
+
+.description {
+  color: #484848;
+  font-family: Roboto,Helvetica Neue,sans-serif;
+  font-size: 16px;
+}
+
+.info {
+  position: fixed;
+  top: 300px;
+}
+
+.gallery {
+  position: relative;
+  background-color: #fff;
+  flex: 1;
+  z-index: 10;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.button-container {
+  position: absolute;
+  top: 64px;
+  right: 64px;
+
+}
+
+.button-container button {
+  float: right;
+}
+
+.hide-modal-svg, .prevPhoto-svg, .nextPhoto-svg {
+  height: 24px;
+  width: 24px;
+  display: block;
+  fill: rgb(72, 72, 72)
+}
+
+.main {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-img {
+  border-radius: 16px;
+  max-width: 85%;
+  max-height: 85vh;
+  object-fit: cover;
+  z-index: 100;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 10;
+}
+
+.hide-modal, .nextPhoto, .prevPhoto {
+  display: inline-block;
+  border: none;
+}
+
+.nextPhoto:focus,.nextPhoto:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.nextPhoto svg{
+  float: right;
+  padding-right: 75px;
+}
+
+.nextPhoto, .prevPhoto {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  margin:0px;
+  z-index:100
+}
+
+.nextPhoto:hover, .prevPhoto:hover {
+  cursor: pointer;
+}
+
+.hide-modal:hover, .portrait:hover {
+  cursor: pointer;
+}
+
+.photo-carousel {
+  display: block;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+.photo-carousel-offset {
+  display: flex;
+  width: 100%;
+  height: 96px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding-right: 52px;
+  align-items: center
+}
+
+.photo-carousel-wrapper {
+  position: absolute;
+  display: flex;
+  padding: 16px 0px;
+  height: 96px;
+  overflow-x: hidden;
+  align-items: center
+}
+
+.photo-carousel-description-container {
+  position: absolute;
+  top: 152px;
+  width: 294px;
+  padding-right: 52px;
+}
+
+.photo-index {
+  margin-bottom: 16px;
+  color: #484848;
+  font-family: Roboto,Helvetica Neue,sans-serif;
+  font-size: 16px;
+}
+
+.portrait {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  flex: 3;
+  z-index: 10;
+  filter: none;
+  justify-content: center;
+}
+
+.portrait-button-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin:auto;
+  z-index:100;
+}
+
+.prevPhoto {
+  padding-left: 75px;
+}
+
+
+
+
+
+
+
+
+
