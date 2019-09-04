@@ -22,15 +22,15 @@ app.get('/api/reviews', (req, res) => {
   })
 });
 
-app.get('/main.js', (req, res) => {
-  res.sendFile('/main.js', (err) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log('Sent: ' + 'main.js')
-    }
-  })
-})
+// app.get('/main.js', (req, res) => {
+//   res.sendFile('/main.js', (err) => {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       console.log('Sent: ' + 'reviews')
+//     }
+//   })
+// })
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);

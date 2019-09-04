@@ -11,6 +11,7 @@ const PORT = 3000;
 
 app.use(cors());
 app.use(express.static(path.resolve(__dirname, './public')));
+app.use(`/listing/:id`, express.static('public'))
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
