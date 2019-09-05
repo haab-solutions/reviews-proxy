@@ -1,0 +1,15 @@
+img.topStock {
+  border: none; 
+  width: 100%;
+}
+
+#Reservations{
+  float:right;
+  width:40%;
+  overflow:hidden;
+}
+
+#Reviews {
+  width:60%;
+  overflow:hidden;
+} 
